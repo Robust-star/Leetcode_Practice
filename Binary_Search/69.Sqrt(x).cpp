@@ -18,7 +18,7 @@ public:
             }
             else
             {
-                high = mid - 1; ////asdag
+                high = mid - 1; ////new
             }
         }
         return res;
