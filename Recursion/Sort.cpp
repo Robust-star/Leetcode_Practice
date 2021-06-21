@@ -34,7 +34,7 @@ int main()
     {
         int x;
         cin >> x;
-        nums.push_back(x);
+        nums.push_back(x); //pushing in array
     }
 
     nums = sort(nums);
