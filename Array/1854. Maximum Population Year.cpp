@@ -29,3 +29,28 @@ public:
 };
 
 // Line swipe algorithm
+
+class Solution
+{
+public:
+    int maximumPopulation(vector<vector<int>> &logs)
+    {
+        map<int, int> mp;
+        for (vector<int> log : logs)
+        {
+            mp[log[0] - 1950]++;
+            mp[log[1] - 1950]--;
+        }
+        int ans, count = 0, year;
+        for (auto i : mp)
+        {
+            count += i.second;
+            if (ans < count)
+            {
+                ans = count;
+                year = i.first;
+            }
+        }
+        return year + 1950;
+    }
+};
