@@ -23,7 +23,7 @@ public:
     {
         int n = x ^ y;
         int res = 0;
-        while (n)
+        while (n) //
         {
             res += n & 1;
             n >>= 1;
